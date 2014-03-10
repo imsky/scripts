@@ -5,12 +5,12 @@ then
 exit
 fi
 
-dir=$(readlink -f $1)
+dir=$(readlink -f "$1")
 
-for i in $dir/$2
+for i in "$dir"/$2
 do
 filename=$(basename "$i")
 extension="${filename##*.}"
 newname=$(md5sum "$dir/$filename" | cut -d ' ' -f 1 -).$extension
-mv "$dir/$filename" $dir/$newname
+mv "$dir/$filename" "$dir"/$newname
 done
