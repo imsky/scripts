@@ -1,0 +1,2 @@
+Usage: firefoxbackup.sh [profile] [backup]
+Where [profile] is the existing Firefox profile directory and [backup] is the desired backup directory.

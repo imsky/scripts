@@ -1,0 +1,2 @@
+Usage: md5name.sh [base] [pattern]
+Where [base] is the base directory and [pattern] is the glob pattern. The pattern is not processed recursively.

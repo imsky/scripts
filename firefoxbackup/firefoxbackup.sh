@@ -1,3 +1,10 @@
+if [ $# -ne 2 ]
+then
+	echo "Usage: firefoxbackup.sh [profile] [backup]"
+	echo "Where [profile] is the existing Firefox profile directory and [backup] is the desired backup directory."
+exit
+fi
+
 mkdir $2
 echo Copying Toolbar Customizations
 cp $1/localstore.rdf $2

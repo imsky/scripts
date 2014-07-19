@@ -1,0 +1,5 @@
+Usage:	collector.sh [base] [pattern] [count] [output]
+	[base] is the base directory for collection
+	[pattern] is the 'find' glob pattern to search 
+	[count] is the number of files to collect
+	[output] is the output directory for the generated archive
