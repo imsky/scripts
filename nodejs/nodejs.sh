@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-rm -rf ~/.nvm
 
+rm -rf ~/.nvm
 NVM_DIR=~/.nvm curl -L https://raw.github.com/creationix/nvm/master/install.sh | bash
 
 if grep NVM_DIR ~/.bashrc
@@ -11,7 +11,6 @@ else
 fi
 
 . ~/.nvm/nvm.sh
-
 nvm install 0.10
 nvm alias default 0.10
-npm install -g bower grunt node-gyp
+npm install -g bower grunt node-gyp gulp
