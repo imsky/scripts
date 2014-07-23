@@ -13,4 +13,4 @@ fi
 . ~/.nvm/nvm.sh
 nvm install 0.10
 nvm alias default 0.10
-npm install -g bower grunt node-gyp gulp
+npm install -g bower grunt-cli node-gyp gulp
