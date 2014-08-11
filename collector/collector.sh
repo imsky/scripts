@@ -16,7 +16,8 @@ OUTDIR=$(readlink -f "$4")
 mkdir $TMPDIR
 echo "Finding matching files"
 find "$INDIR" -iname $2 | shuf -n $3 > $TMPDIR/$FILELIST
-echo "Moving found files to temporary directory"
+FILESFOUND=$(wc -l $TMPDIR/$FILELIST | cut -d' ' -f1)
+echo "Moving found files to temporary directory ($FILESFOUND)"
 rsync --remove-source-files --files-from=$TMPDIR/$FILELIST / $TMPDIR
 
 #Flatten temporary directory

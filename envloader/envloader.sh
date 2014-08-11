@@ -3,7 +3,9 @@
 # This script sets all environment variables in ~/.env to the PATH
 # Each line in ~/.env should have a variable, a tab, and a value. Example:
 # PATH	/home/user/bin
-# Running it directly adds it to the user's .bashrc, so it's always executed
+# Each value is prepended to the existing value, so the above line is interpreted as:
+# export PATH=/home/user/bin:$PATH
+# Running this script directly adds it to the user's .bashrc, so it's always executed
 
 if [ X"$0" = X"envloader.sh" ]
 then
