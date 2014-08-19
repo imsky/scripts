@@ -1,6 +1,0 @@
-#!/bin/sh
-
-DATE=$1
-GITDATE=$(date --date="$DATE" -R)
-shift
-GIT_COMMITTER_DATE=$GITDATE GIT_AUTHOR_DATE=$GITDATE git "$@"
