@@ -1,0 +1,3 @@
+Usage: git-date '2014-01-05' commit -m ...
+
+For best results, git-date should be placed in /usr/local/bin.
